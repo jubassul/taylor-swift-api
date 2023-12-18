@@ -18,6 +18,6 @@ module.exports = listTopMusicsService = async (req, res) => {
     );
     return response;
   } catch (error) {
-    console.error("Erro ao listar músicas da Taylor Swift:", error);
+    console.error("Erro ao listar as top 10 músicas da Taylor Swift:", error);
   }
 };

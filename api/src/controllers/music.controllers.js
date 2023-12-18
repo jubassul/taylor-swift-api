@@ -1,7 +1,7 @@
-const { listErasMusicsService, listTopMusicsService } = require("../service/index");
+const { listAllMusicsService, listTopMusicsService } = require("../service/index");
 
-const listErasMusics = async (req, res) => {
-  const erasMusics = await listErasMusicsService();
+const listAllMusics = async (req, res) => {
+  const erasMusics = await listAllMusicsService();
   return res.status(200).json(erasMusics);
 };
 
@@ -10,6 +10,6 @@ const listTopMusics = async (req, res) => {
   return res.status(200).json(topMusic);
 };
 module.exports = {
-  listErasMusics,
+  listAllMusics,
   listTopMusics,
 };
